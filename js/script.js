@@ -60,8 +60,10 @@ $(document).ready(function() {
 		};
 		if (scrolled > $('.header').outerHeight() && scrolled > scrollPrev && windowWidth < 575) {
 			$('.header').css('top', -(heightScrollForTop));
+			$('.header__bottom').slideDown(400);
 		} else if (scrolled < $('.header').outerHeight() && windowWidth < 575 ||  scrolled < scrollPrev && windowWidth < 575) {
 			$('.header').css('top', '0');
+			$('.header__bottom').slideDown(400);
 		};
 		scrollPrev = scrolled;
 	});
