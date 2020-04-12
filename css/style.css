@@ -255,6 +255,12 @@ button {
   padding: 20px 0;
 }
 
+@media (max-width: 575px) {
+  .header__bottom {
+    display: none !important;
+  }
+}
+
 .header__bottom__icon {
   height: 40px;
   width: 40px;
