@@ -50,10 +50,11 @@ $(document).ready(function() {
 	$('.line__img').width(heightLineImg());
 	let scrollPrev = 0;
 	let windowWidth = $(window).width();
-	$(window).resize(function(){
-		windowWidth = $(window).width()
-	});
 	let heightScrollForTop = $('.header__top__up-1').outerHeight() + $('.header__top__up-2').outerHeight() + 22;
+	$(window).resize(function(){
+		windowWidth = $(window).width();
+		heightScrollForTop = $('.header__top__up-1').outerHeight() + $('.header__top__up-2').outerHeight() + 22
+	});
 	$(window).scroll(function() {
 		let scrolled = $(window).scrollTop();
 		if (windowWidth > 575) {
